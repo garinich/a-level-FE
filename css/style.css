@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font: 13px Arial, sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+    min-width: 1024px;
+    min-height: 100%;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+    background: #444;
+}
+
+header h1 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0;
+}
+
+code {
+    background: #ccc;
+    border-radius: 3px;
+    border: 1px solid #D2691E;
+    display: inline-block;
+    padding: 0 10px;
+    color: #D2691E;
+}
+
+main {
+    padding: 20px 0 120px;
+}
+
+#list {
+    margin: 0;
+    padding: 40px 0 30px;
+    list-style: none;
+}
+
+#list > li {
+    border: 1px solid #D2691E;
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin: 0 0 10px;
+}
+
+#list > li .text {
+    font-size: 15px;
+    line-height: 34px;
+}
+
+#list > li input {
+    display: none;
+    line-height: 34px;
+    height: 34px;
+    padding: 0 10px;
+    margin: 0 0 0 -10px;
+    border: 1px solid #D2691E;
+    border-radius: 4px;
+    font-size: 15px;
+    box-shadow: 0 0 5px #D2691E;
+}
+
+#list > li input:focus {
+    outline: none;
+}
+
+#list > li.edit input {
+    display: inline;
+}
+
+#list > li.edit .text {
+    display: none;
+}
+
+#list button {
+    float: right;
+}
+
+#list.preloader {
+    padding-bottom: 80px;
+    background: url("../images/preloader.svg") no-repeat 50% calc(100% - 45px);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #444;
+    height: 100px;
+    margin: -100px 0 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 30px 0 0;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 8px 16px;
+    background: #D2691E;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+button:hover {
+    background: #fff;
+    color: #D2691E;
+    border: 1px solid #D2691E;
+}
+
+button:focus {
+    outline: none;
+}
+
+#wrapper.disabled button {
+    background: #444444;
+    color: #fff;
+    border-color: #fff;
+    cursor: wait;
+}
